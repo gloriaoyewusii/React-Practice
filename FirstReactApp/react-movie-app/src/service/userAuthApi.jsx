@@ -1,6 +1,6 @@
 import {createApi, fetchBaseQuery} from '@reduxjs/toolkit/query/react';
 
-const url = "localhost:8080/"
+const url = "http://localhost:5000/"
 
 // localhost:8080 is the url for the backend, and it is the url that is used to make the requests to the backend
 // the port has to correspond to the one in the backend
@@ -24,11 +24,11 @@ export const userAuthApiSlice = createApi({
 
 
             query: (data) => ({
-                url: "/signUp",
+                url: "/register_patient",
                 method: "POST",
-                header: {"Content-Type": "application/json"},
+                headers: {"Content-Type": "application/json"},
                 //the header is the header for the request, and it is the header that is used to make the requests to the backend
-                body: data
+                body: JSON.stringify(data)
 
             })
             

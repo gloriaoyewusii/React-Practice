@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router";
 import styles from "./login.module.css"
 import CustomButton from "../../../reusable/CustomButton";
 import { useState } from "react";
@@ -43,8 +43,10 @@ const LogIn = () => {
                         name="password"
                         required />
                     </div>
-                </form>
+                    <Link to="/signup">SignUp</Link>
+                
                 <CustomButton text="Log In" />
+                </form>
             </div>
             
         </>

@@ -13,11 +13,6 @@ const BookList = () => {
 	const [newBook, setNewBook] = useState()
 	const [searchBookValue, setSearchBookValue] = useState("");
 	
-	// const [searchBookValue, setSearchBookValue] = useState()
-
-	// const searchHandler = (bookToFind)=>{
-	// 	setBooks(books.filter((book)=>book !== bookToFind))
-	// }
     const deleteHandler = (item)=>{
         console.log(e)
         // bookList.filter((book)=> book !== item)
